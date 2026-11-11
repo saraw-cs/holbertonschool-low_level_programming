@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -29,11 +30,7 @@ int _atoi(char *s)
 			found = 1;
 			num = num * 10 + (s[i] - '0');
 		}
-		else if (found == 0)
-		{
-			sign = 1;
-		}
-		else
+		else if (found == 1)
 			break;
 		i++;
 	}
