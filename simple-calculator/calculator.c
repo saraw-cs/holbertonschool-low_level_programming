@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int choice;
+    int choice = 0;
     int a, b;
 
     do
@@ -16,7 +16,8 @@ int main(void)
         printf("0) Quit\n");
         printf("Choice: ");
 
-        scanf("%d", &choice);
+        if (scanf("%d", &choice) != 1)
+            return (1);
 
         if (choice == 1)
         {
@@ -28,7 +29,17 @@ int main(void)
 
             printf("Result: %d\n", a + b);
         }
-        else if (choice > 4 || choice < 0)
+        else if (choice == 2)
+        {
+            printf("A: ");
+            scanf("%d", &a);
+
+            printf("B: ");
+            scanf("%d", &b);
+
+            printf("Result: %d\n", a - b);
+        }
+        else if (choice < 0 || choice > 4)
         {
             printf("Invalid choice\n");
         }
@@ -39,3 +50,4 @@ int main(void)
 
     return (0);
 }
+
