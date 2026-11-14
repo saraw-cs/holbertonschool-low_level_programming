@@ -23,21 +23,25 @@ int main(void)
         {
             printf("A: ");
             scanf("%d", &a);
-
             printf("B: ");
             scanf("%d", &b);
-
             printf("Result: %d\n", a + b);
         }
         else if (choice == 2)
         {
             printf("A: ");
             scanf("%d", &a);
-
             printf("B: ");
             scanf("%d", &b);
-
             printf("Result: %d\n", a - b);
+        }
+        else if (choice == 3)
+        {
+            printf("A: ");
+            scanf("%d", &a);
+            printf("B: ");
+            scanf("%d", &b);
+            printf("Result: %d\n", a * b);
         }
         else if (choice < 0 || choice > 4)
         {
@@ -50,4 +54,3 @@ int main(void)
 
     return (0);
 }
-
