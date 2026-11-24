@@ -3,6 +3,11 @@
 
 #include <stdlib.h>
 
+/**
+ * struct op - Structure for arithmetic operations
+ * @op: The operator symbol
+ * @f: Pointer to the function associated with the operator
+ */
 typedef struct op
 {
 	char *op;
